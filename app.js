@@ -7,7 +7,13 @@ var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
 var db = 'mongodb://localhost:27017/spirio';
+var dbname = 'spirio';
  mongoose.connect(db);
+if (process.env.OPENSHIFT_MONGODB_DB_PASSWORD) {
+
+    db = process.env.OPENSHIFT_MONGODB_DB_URL +dbname;
+}
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
