@@ -1,0 +1,136 @@
+<html>
+    <head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+        <title> <%= title %> </title>
+    
+    </head>
+    
+    <body>
+        
+        <script src='../js/homepage.js'></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Spirio Inventory</h2>
+                </div>
+            <div class="row">
+                <div class="col-md-12">
+            <table class="table table-striped">
+                <tr>
+                    <th>Model</th>
+                    <th>Serial</th>
+                    <th>Location</th>
+                    <th>Showroom</th>
+                    <th>Sold</th>
+                    <th>Sold on</th>
+                    <th>App ID</th>
+                    <th>App activated</th>
+                    <th>Cust Name</th>
+                    <th>Cust Addr</th>
+                    <th>Cust Email</th>
+                    <th>Cust ph</th>
+                    <th>remove</th>
+                </tr>
+                <tbody id="inventoryBody"></tbody>
+                
+                </table>
+            </div>
+                <div class="col-md-12">
+                <form class="form-horizontal" id="addeditpiano">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label for="inputModel" class="control-label">Model</label>
+	    <select type="text" id="inputModel" class="form-control" name="model" placeholder="model">
+            <option value="M">M</option>
+            <option value="B">B</option>
+            <option value="O">O</option>
+        </select>
+	     </div>
+	
+	    <div class="col-md-3">
+	      <label for="inputSerial" class="control-label">Serial</label>
+	      <input type="number" id="inputSerial" class="form-control" name="serial" placeholder="serial"></input>
+	     </div>
+        <div class="col-md-3">
+	      <label for="inputLocation" class="control-label">Location</label>
+	      <input type="text" id="inputLocation" class="form-control" name="location" placeholder="Location"></input>
+	     </div>
+        <div class="col-md-3">
+	      <label for="inputShowroom" class="control-label">Showroom</label>
+	      <input type="text" id="inputShowroom" class="form-control" name="showroom" placeholder="Showroom"></input>
+	     </div>
+	   </div>
+                
+        <div class="form-group">
+            <div class="col-md-3">
+                <label for="inputSold" class="control-label">Sold</label>
+	       <select type="text" id="inputSold" class="form-control" name="sold" placeholder="sold">
+            <option value="">select</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+   
+        </select>
+	     </div>
+	
+	    <div class="col-md-3">
+	      <label for="inputSoldon" class="control-label">Sold on</label>
+	      <input type="text" id="inputSoldon" class="form-control" name="dateOfSale" placeholder="sold on"></input>
+                
+	     </div>
+        <div class="col-md-3">
+	      <label for="inputAppid" class="control-label">App ID</label>
+	      <input type="text" id="inputAppid" class="form-control" name="appId" placeholder="App ID"></input>
+	     </div>
+        <div class="col-md-3">
+	      <label for="inputAppactivated" class="control-label">App activated</label>
+	      <select type="text" id="inputAppactivated" class="form-control" name="appactivated" placeholder="app activated">
+            <option value="">select</option>
+              <option value="true">Yes</option>
+              <option value="false">No</option>
+            </select>
+	     </div>
+	   </div>
+    
+        <div class="form-group">
+            <div class="col-md-3">
+                <label for="inputCustomer" class="control-label">Customer</label>
+	       <input type="text" id="inputCustomer" class="form-control" name="custName" placeholder="customer"></input>
+	     </div>
+	
+	    <div class="col-md-3">
+	      <label for="inputcustAddress" class="control-label">Customer Address</label>
+	      <input type="date" id="inputcustAddress" class="form-control" name="custAddress" placeholder="cust address"></input>
+	     </div>
+        <div class="col-md-3">
+	      <label for="inputcustEmail" class="control-label">Customer Email</label>
+	      <input type="text" id="inputcustEmail" class="form-control" name="custEmail" placeholder="customer email"></input>
+	     </div>
+        <div class="col-md-3">
+	      <label for="inputcustPhone" class="control-label">Customer Phone</label>
+	      <input type="text" id="inputcustPhone" class="form-control" name="custPhone" placeholder="customer phone"></input>
+	     </div>
+	   </div>
+
+	   </div>
+        <div class="form-group">
+
+	      <div class="col-sm-8">
+		<button type="submit" id="addPiano" class="btn btn-primary btn-sm">ADD</button>
+		<a id="addPiano_cancel" href="#0">  cancel</a>
+	     </div>  
+	    </div>
+                    
+                    </form>
+                
+                </div>
+            </div>
+    
+
+    </div>
+    </body>
